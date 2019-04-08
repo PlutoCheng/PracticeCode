@@ -1,0 +1,17 @@
+spring:
+  redis:
+    host: 101.132.77.167
+    port: 6379
+    password: redis0
+    jedis:
+      pool:
+         max-idle: 20
+         min-idle: 1
+         max-active: 20
+         max-wait: 60000
+    database: 0
+    
+mybatis:
+# spring boot集成mybatis的方式打印sql
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
